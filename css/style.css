@@ -943,6 +943,9 @@ h3 {
   .heroContentBox p {
     font-size: 14px;
   }
+  #preloader img {
+    width: 128px;
+  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -964,4 +967,23 @@ h3 {
   .copyright {
     font-size: 13px;
   }
+}
+
+#hola {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  display: grid;
+  place-content: center;
+}
+
+#preloader {
+  position: relative;
+  width: 256px;
+  height: auto;
+  object-fit: contain;
+  display: grid;
+  place-content: center;
 }
