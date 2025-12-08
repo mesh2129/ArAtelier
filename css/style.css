@@ -926,6 +926,22 @@ h3 {
     margin: 0 auto;
   }
 }
+
+@media only screen and (max-width: 580px) {
+  .site-section-hero .heading {
+    font-size: 3rem;
+  }
+  .heroContentBox > img {
+    width: 100%;
+  }
+  .heroContentBox {
+    padding: 0 2rem 0 2rem;
+  }
+  .heroContentBox p {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 414px) {
   .site-section-hero .heading {
     font-size: 3rem;
