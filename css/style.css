@@ -981,12 +981,45 @@ h3 {
 
 #preloader {
   position: relative;
-  width: 200px;
+  width: auto;
   height: auto;
   object-fit: contain;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #preloader img {
   width: 200px;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink-caret {
+  25% {
+    border-color: #ffcb85;
+  }
+}
+
+.splash-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.splash-text {
+  color: #c49b63;
+  font-weight: 300;
+  font-size: 2rem;
+  border-right: 1px solid #c49b63;
+  width: 270px;
+  /* width: 16ch; */
+  margin: 30px 0 0px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 3s steps(30, end),
+    blink-caret 0.5s step-end infinite alternate;
 }

@@ -1,10 +1,10 @@
 $(window).load(function () {
 	setTimeout(function () {
 		$("#preloader").velocity(
-			{
-				opacity: 0.1,
-				translateY: "-80px"
-			},
+			// {
+			// 	opacity: 0.1,
+			// 	translateY: "-80px"
+			// },
 			{
 				duration: 100,
 				complete: function () {
@@ -25,6 +25,10 @@ $(window).load(function () {
 		);
 	}, 1000);
 });
+
+
+
+
 
 AOS.init({
 	duration: 800,
