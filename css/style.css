@@ -981,9 +981,12 @@ h3 {
 
 #preloader {
   position: relative;
-  width: 256px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   display: grid;
   place-content: center;
+}
+#preloader img {
+  width: 200px;
 }
